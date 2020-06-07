@@ -8,7 +8,6 @@ public class Solution {
 
     public static String getMd5(String input) {
         try {
-
             // Static getInstance method is called with hashing MD5
             MessageDigest md = MessageDigest.getInstance("MD5");
 
