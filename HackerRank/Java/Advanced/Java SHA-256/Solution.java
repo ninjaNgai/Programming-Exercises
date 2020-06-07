@@ -1,51 +1,42 @@
 import java.io.*;
 import java.util.*;
-import java.math.BigInteger;
-import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+import javax.xml.bind.DatatypeConverter;
 
 public class Solution {
 
-    public static byte[] getSHA(String input) throws NoSuchAlgorithmException
-    {
-        // Static getInstance method is called with hashing SHA
-        MessageDigest md = MessageDigest.getInstance("SHA-256");
-
-        // digest() method called
-        // to calculate message digest of an input
-        // and return array of byte
-        return md.digest(input.getBytes(StandardCharsets.UTF_8));
-    }
-
-    public static String toHexString(byte[] hash)
-    {
-        // Convert byte array into signum representation
-        BigInteger number = new BigInteger(1, hash);
-
-        // Convert message digest into hex value
-        StringBuilder hexString = new StringBuilder(number.toString(16));
-
-        // Pad with leading zeros
-        while (hexString.length() < 32)
-        {
-            hexString.insert(0, '0');
-        }
-
-        return hexString.toString();
-    }
-
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        try {
+        Scanner sn = new Scanner(System.in);
+        String data = sn.nextLine();
+        String hash = getSHA256Hash(data);
+        System.out.println(hash);
+    }
 
-            Scanner scan = new Scanner(System.in);
-            String s = scan.nextLine();
-            System.out.println(toHexString(getSHA(s)));
+    /**
+     * Returns a hexadecimal encoded SHA-256 hash for the input String.
+     * @param data
+     * @return
+     */
+    private static String getSHA256Hash(String data) {
+        String result = null;
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hash = digest.digest(data.getBytes("UTF-8"));
+            return bytesToHex(hash); // make it printable
+        }catch(Exception ex) {
+            ex.printStackTrace();
         }
-        // For specifying wrong message digest algorithms
-        catch (NoSuchAlgorithmException e) {
-            System.out.println("Exception thrown for incorrect algorithm: " + e);
-        }
+        return result;
+    }
+
+    /**
+     * Use javax.xml.bind.DatatypeConverter class in JDK to convert byte array
+     * to a hexadecimal string. Note that this generates hexadecimal in upper case.
+     * @param hash
+     * @return
+     */
+    private static String bytesToHex(byte[] hash) {
+        return DatatypeConverter.printHexBinary(hash).toLowerCase();
     }
 }
