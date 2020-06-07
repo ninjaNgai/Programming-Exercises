@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://www.hackerrank.com/_clfm_">
+    <a href="https://www.hackerrank.com/ctngai">
         <img height=200 src="images/hackerrank-logo.jpg">
     </a>
 </p>
