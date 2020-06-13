@@ -4,25 +4,25 @@ public class Solution {
 
     static boolean isAnagram(String a, String b) {
         // Complete the function
-        long countA;
-        long countB;
 
         // Create char array of unique characters
         StringBuilder sb = new StringBuilder();
         java.util.Set<Character> linkedHashSet = new java.util.LinkedHashSet<>();
 
-        for (int i = 0; i < a.length(); i++) {
-            linkedHashSet.add(a.charAt(i));
-        }
+        // Add characters to a combined distinct list
+        a.chars().forEach(ch -> linkedHashSet.add(Character.toLowerCase((char) ch)));
+        b.chars().forEach(ch -> linkedHashSet.add(Character.toLowerCase((char) ch)));
 
+        // Compares frequency of each character
         for(Character c : linkedHashSet) {
-            countA = a.chars().filter(ch -> Character.toLowerCase(ch) == c).count();
-            countB = b.chars().filter(ch -> Character.toLowerCase(ch) == c).count();
+            long countA = a.chars().filter(ch -> Character.toLowerCase(ch) == c).count();
+            long countB = b.chars().filter(ch -> Character.toLowerCase(ch) == c).count();
 
-            if (countA != countB) {
+            if(countA != countB) {
                 return false;
             }
         }
+
         return true;
     }
 
@@ -34,5 +34,5 @@ public class Solution {
         scan.close();
         boolean ret = isAnagram(a, b);
         System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
-  }
+    }
 }
