@@ -6,7 +6,7 @@
 Write the appropriate relationship (IS-A, HAS-A, and IMPLEMENTS) on each arrow in the class diagram:
 
 <p align="center">
-    <img height=200 src="../images/ClassDiagram-Ch1.JPG">
+    <img height=300 src="../images/ClassDiagram-Ch1.JPG">
 </p>
 
 #### HAS-A can be better than IS-A
@@ -50,5 +50,5 @@ When you put two classes together like this, you're using **composition**. Inste
 
 ## Design Puzzle Solution
 <p align="center">
-    <img height=200 src="../images/DesignPuzzle-Ch1.JPG">
+    <img height=300 src="../images/DesignPuzzle-Ch1.jpg">
 </p>
