@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "cwd": "/Users/CNPRO/ProjectsFun/Programming-Exercises/Design-Patterns/Chapter1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<Programming-Exercises_5cbd7fda>",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Programming-Exercises_5cbd7fda"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MiniDucksSimulator<Programming-Exercises_5cbd7fda>",
+            "request": "launch",
+            "mainClass": "Chapter1.MiniDucksSimulator",
+            "projectName": "Programming-Exercises_5cbd7fda"
+        }
+    ]
+}
