@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://www.hackerearth.com/@ninjangai">
-        <img height=200 src="images/hackerearth.png">
+        <img height=200 width=200 src="images/hackerearth.png">
     </a>
 </p>
 
