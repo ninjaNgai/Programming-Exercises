@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - WeatherStation",
+            "request": "launch",
+            "mainClass": "Chapter2.Weather.WeatherStation",
+            "projectName": "Programming-Exercises_5cbd7fda"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}",
