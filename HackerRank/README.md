@@ -14,4 +14,4 @@
 
 | Domain                 | Language(s) | Solved/Total |
 | ---------------------- | :---------: | :----------: |
-| [Java](Java/README.md) |   Java 8    |    40/64     |
+| [Java](Java/README.md) |   Java 8    |    41/64     |
