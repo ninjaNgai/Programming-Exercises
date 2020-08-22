@@ -3,7 +3,7 @@
 
 | Challenge                                                                   |                         Solution                          |
 | --------------------------------------------------------------------------- | :-------------------------------------------------------: |
-| [Filtered Employees List](https://www.hackerrank.com/challenges/react-filtered-employee/problem) | [ReactJS](a71d98ad-591b-4997-8d94-642d506ca520/src/components/EmployeesList.js) |
-| [Language Translator](https://www.hackerrank.com/challenges/java-primality-test) | [ReactJS]() |
+| [Filtered Employees List](https://www.hackerrank.com/challenges/react-filtered-employee/problem) | [ReactJS](Filtered Employees List/EmployeesList.js) |
+| [Language Translator](https://www.hackerrank.com/challenges/react-language-translator/problem) | [ReactJS](Language TranslatorTranslator.js) |
 | [Placeholder](https://www.hackerrank.com/challenges/java-biginteger)         |    [ReactJS]()    |
 
