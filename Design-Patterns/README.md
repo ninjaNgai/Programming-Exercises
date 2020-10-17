@@ -19,7 +19,10 @@
     * Program to interfaces, not implementations.
     * Strive for loosely coupled designs between objects that interact.
     * Open-Closed: Classes should be open for extension but closed for modification.
+    * Depend on abstractions. Do not depend on concrete classes
 * OO Patterns
     * Strategy - defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
     * Observer - defines a one-to-many relationship between a set of objects. When the state of one object changes, all of its dependents are notified.
     * Decorator - Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+    * Abstract Factory - Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+    * Factory Method - Defines an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to the subclasses

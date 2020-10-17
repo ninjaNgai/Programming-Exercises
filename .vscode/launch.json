@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PizzaTestDrive",
+            "request": "launch",
+            "mainClass": "PizzaTestDrive",
+            "projectName": "Programming-Exercises_5cbd7fda"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PizzaTestDrive",
+            "request": "launch",
+            "mainClass": "Chapter4.PizzaTestDrive",
+            "projectName": "Programming-Exercises_5cbd7fda"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StarbuzzCoffee",
             "request": "launch",
             "mainClass": "Chapter3.StarbuzzCoffee",
